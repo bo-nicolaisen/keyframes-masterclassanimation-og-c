@@ -1,0 +1,16 @@
+/* @keyframes animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation;
+ */
+
+.ball {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
