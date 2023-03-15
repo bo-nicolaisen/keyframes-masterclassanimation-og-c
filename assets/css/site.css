@@ -1,10 +1,18 @@
-/* @keyframes animation-name
+/* @keyframes
+
+
 animation-duration
 animation-delay
+animation-timing-function
+
+
+animation-name
+
 animation-iteration-count
 animation-direction
-animation-timing-function
+
 animation-fill-mode
+
 animation;
  */
 
@@ -12,5 +20,70 @@ animation;
   background-color: red;
   width: 100px;
   height: 100px;
+  margin: 10px;
   border-radius: 50px;
+
+  animation-duration: 2s;
+
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+
+  animation-direction: alternate;
+}
+
+.animateRight {
+  animation-name: moveRight;
+}
+
+.animateRightSlow {
+  animation-name: moveRight;
+  animation-duration: 8s;
+}
+
+.animateWild {
+  animation-name: moveWild;
+}
+
+/* 
+keyframe sets  */
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(400px);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(-400px);
+  }
+}
+
+@keyframes moveWild {
+  0% {
+    transform: translateX(0px);
+    background-color: brown;
+  }
+
+  100% {
+    transform: translateX(200px);
+    background-color: brown;
+  }
+
+  50% {
+    transform: translateX(400px);
+  }
+
+  74% {
+    transform: translateX(1200px);
+    background-color: darkorchid;
+  }
 }
